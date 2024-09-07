@@ -1,0 +1,200 @@
+.footer_left{
+    padding: 70px 0;
+    .footer_left_txt{
+        line-height: 30px;
+       
+        p{
+font-size: 14px;
+span{
+    font-weight: bold;
+}
+        }
+
+    }
+    .footer_left__button{
+     
+button{
+    border: none;
+   cursor: pointer;
+    position: relative;
+    padding: 6px 0;
+  span{
+  font-weight: 550;
+font-size: 14px;
+    i{
+       margin-left: 10px;
+        rotate: 40deg;
+        font-weight: 600;
+    }
+  }
+  &::after{
+position: absolute;
+width: 100px;
+height: 1px;
+background-color: black;
+bottom: 0px;
+left: 0;
+content: "";
+  }
+}
+    }
+    .footer_left_media{
+       
+ul{
+    @include Flexible(center, flex-start, row, wrap, 7px);
+    padding: 30px 0;
+    li{
+        cursor: pointer;
+        border: 1px solid rgb(161, 161, 161);
+        padding: 10px 13px;
+        border-radius: 100%;
+        transition: 0.6s ease-in-out;
+    }
+    .face{
+        &:hover{
+           border-color: $facebook_color;
+           color: $facebook_color;
+        }
+    }
+    .twit{
+        &:hover{
+            border-color: $twitter_color;
+            color: $twitter_color;
+        }
+    }
+    .insta{
+        &:hover{
+            border-color: $instagram_color;
+            color: $instagram_color;
+        }
+    }
+    .tt{
+        &:hover{
+            border-color: $tiktok_color;
+            color: $tiktok_color;
+        }
+    }
+    .pint{
+        &:hover{
+            border-color: $pinterest_color;
+            color: $pinterest_color;
+        }
+    }
+}
+    }
+}
+#foot{
+    background-color: rgb(240, 240, 240);
+    margin-top: 50px;
+}
+.footer_mid{
+padding: 60px 20px;
+    @include Flexible(flex-start, flex-start, row, wrap, 190px);
+  .help{
+    @include Flexible(flex-start, flex-start, column, wrap, 20px);
+    li{
+        h2{
+            line-height: 50px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            color: rgb(96, 96, 96);
+        }
+    }
+  }
+  .about{
+    @include Flexible(flex-start, flex-start, column, wrap, 20px);
+    li{
+        h2{
+            line-height: 50px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        p{
+            font-size: 14px;
+            color: rgb(96, 96, 96);
+        }
+    }
+  }
+}
+.footer_right{
+    padding: 70px 0;
+    ul{
+        @include Flexible(flex-start, flex-start, column, wrap, 10px);
+
+        li{
+            display: flex;
+            h2{
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 40px;
+                
+            }
+            p{
+                line-height: 20px;
+                font-size: 12px;
+                color: rgb(96, 96, 96);
+            }
+        }
+        .btn-main{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+                 padding: 6px 0;
+                 max-width: 270px;
+                 width: 100%;
+                 border: 0.6px solid $gray_color;
+                 border-radius: 4px;
+                 background-color: $white_color;
+                box-shadow: 3px rgb(223, 30, 40);
+                 .btn_main_input{
+input{
+  color: rgb(105, 105, 105);
+    padding: 6px 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    margin-top: 1px;
+    font-size: 14px;
+    text-decoration: none;
+}
+                 }
+                 .btn_main_button{
+                    button{
+                        background-color: $black_color;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 4px;
+                        color: $white_color;
+                        span{
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+                        i{
+                            rotate: 40deg;
+                            font-size: 12px;
+                        }
+                    }
+                 }
+                }
+    
+            }
+            .footer_right_img1{
+                cursor: pointer;
+                margin-top: 30px;
+                @include Flexible(flex-start, flex-start, column, wrap, 7px);
+                width: 16px;
+                height: 19px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .footer_right_img2{
+                   display: flex;
+                   margin-left: 20px;
+                }
+            }
+        }
+       

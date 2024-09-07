@@ -1,0 +1,131 @@
+.karusel_txt{
+      padding: 4rem;
+       width: 100%;
+       height: 100%;
+       background-color: $background-color;
+   
+       
+      h2{
+        line-height: 70px;
+        font-size: 55px;
+        font-weight: 400;
+      }
+      p{
+        line-height: 40px;
+        font-size: 20px;
+        color: gray;
+      }
+      button{
+        background-color: $white_color;
+        border: none;
+        padding: 14px 17px;
+       margin-top: 30px;
+       &:hover{
+        filter: brightness(20px);
+       }
+        span{
+            font-weight: 500;
+        }
+      }
+}
+
+
+.karuselimg{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+
+
+    
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        left: 60px;
+        z-index: 2;
+        display: flex;
+        justify-content:start;
+        gap: 15px;
+        padding: 0;
+        margin:0;
+        
+    
+        .dot{
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            outline:2px solid transparent;
+            border: 0;
+            outline-offset: 5px;
+            outline-color: black;
+            &:hover{
+                background-color: black;
+                    
+            
+            }
+            
+        }
+      .dot1{
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        outline:2px solid transparent;
+        border: 0;
+        outline-offset: 5px;
+        
+        &:hover{
+           
+            outline-color: black;
+        
+        }
+      }
+      .dot2{
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        outline:2px solid transparent;
+        border: 0;
+        outline-offset: 5px;
+        
+        &:hover{
+            background-color: black;
+            outline-color: black;
+        
+        }
+      }
+        
+    }
+
+
+    .karusel_txt1{
+     width: 100%;
+     height: 100%;
+        background-color: #E2EBDE;
+        padding: 4rem ;
+       h2{
+         line-height: 70px;
+         font-size: 55px;
+         font-weight: 400;
+       }
+       p{
+         line-height: 40px;
+         font-size: 20px;
+         color: gray;
+       }
+       button{
+         background-color: $white_color;
+         border: none;
+         padding: 14px 17px;
+        margin-top: 30px;
+         span{
+             font-weight: 500;
+         }
+       }
+ }

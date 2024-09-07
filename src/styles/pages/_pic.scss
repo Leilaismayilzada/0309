@@ -1,0 +1,82 @@
+.pic{
+    margin-top: 60px;
+    @include Flexible(flex-start, flex-start, row, wrap, 20px);
+    .pic_img{
+        display: block;
+        min-height: 100%;
+        max-height: 200%;
+        min-width: 100%;
+        position: relative;
+        overflow: hidden;
+        img{
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+        transition: 1s ease-in-out;
+        &:hover{
+            transform: scale(1.09);
+        }
+    
+    
+    }
+        .pic_txt{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            color: $white_color;
+            font-size: 30px;
+            @include Flexible(center, flex-start, row, wrap, 10px);
+            line-height: 40px;
+          font-size: 27px;
+          max-width: 300px;
+          h2{
+            font-weight: 450;
+          }
+          p{
+            font-size: 25px;
+            font-weight: 450;
+          }
+          span{
+            font-weight: 600;
+          }
+
+
+        }
+.pic_button{
+    position: absolute;
+    bottom: 50px;
+left: 50px;
+   
+  button{
+    background-color: inherit;
+    border: none;
+    left: 40px;
+    color: #fff;
+    font-weight:700;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        color: $black_color;
+     }
+  }
+   i{
+    margin-left: 10px;
+    rotate: 40deg;
+   }
+   &::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    bottom: -6px;
+    left: 6px;
+    background-color: $white_color;
+    transition: 0.5s ease-in-out;
+
+   }
+   &:hover::after{
+    background-color: $black_color;
+ }
+}
+
+}
+}

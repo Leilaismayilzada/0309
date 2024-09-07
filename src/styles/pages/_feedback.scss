@@ -1,0 +1,129 @@
+
+.happy{
+    background-image: url(https://demo-ecomus-global2.myshopify.com/cdn/shop/files/image_bg_testimonials.jpg?v=1696046476&width=3000);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    height: 100%;
+ 
+}
+.feedback_head {
+    padding: 0px 20px 40px 20px;
+    text-align: center;
+    @media (max-width:768px) {
+        padding-top: 50px;
+        }
+    h1 {
+        font-size: 42px;
+        color: $white_color;
+    }
+}
+
+
+
+    .carde {
+               background-color: $white_color;
+
+        @include Flexible(flex-start, flex-start, row, wrap, 0px);
+        padding: 20px;
+        @media (max-width:768px) {
+          margin-top: 20px;
+            }
+        .card_main {
+            border-bottom: 1px solid rgb(195, 195, 195);
+            ul {
+                @include Flexible(flex-start, flex-start, row, wrap, 0px);
+                line-height: 30px;
+    
+                li {
+                    color: $gold_color;
+                }
+            }
+    
+            h2 {
+                font-weight: 700;
+                line-height: 40px;
+                font-size: $default_size;
+            }
+    
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 20px;
+    
+            }
+    
+            span {
+                margin-top: 20px;
+                @include Flexible(flex-start, flex-start, column, wrap, 5px);
+                font-weight: 600;
+                margin-bottom: 30px;
+    
+                h4 {
+                    font-weight: 400;
+                    font-size: 15px;
+    
+                }
+            }
+        }
+    
+        .card_foot {
+            @include Flexible(flex-start, flex-start, row, wrap, 20px);
+            padding: 30px 0;
+            width: 100%;
+    
+            .foot_img {
+                width: 90px;
+                height: 70px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .card_foot_txt {
+    
+                @include Flexible(flex-start, center, column, wrap, 10px);
+                margin-top: 10px;
+    
+                p {
+                    font-size: 12px;
+                }
+    
+                span {
+                    font-size: 15px;
+                    font-weight: 550;
+                }
+    
+            }
+    
+            .card_foot_txt_btn {
+                @include Flexible(flex-start, center, row, wrap, 0px);
+                margin-top: 10px;
+                margin-left: 10px;
+    
+                button {
+                    transition: 0.1s ease-in-out;
+                    opacity: 0;
+                    background-color: inherit;
+                    border-radius: 100%;
+                    padding: 13px 17px;
+    
+                    &:hover {
+                        background-color: $black_color;
+                        color: $white_color;
+    
+                    }
+    
+                    i {
+                        rotate: 40deg;
+                    }
+                }
+            }
+        }
+    
+        &:hover .card_foot_txt_btn button {
+            opacity: 1;
+        }
+    }

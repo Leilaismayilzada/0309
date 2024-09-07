@@ -1,0 +1,88 @@
+.homes {
+    padding: 40px 0;
+    @include Flexible(center, center, row, wrap, 0px);
+    cursor: pointer;
+
+    ul {
+        @include Flexible(center, flex-start, row, wrap, 30px);
+
+        a {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: $black_color;
+            font-weight: 500;
+            font-size: 20px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 2px;
+                color: black;
+                bottom: -10px;
+                left: 0;
+                transform-origin: left;
+                background-color: $black_color;
+                transition: 0.4s ease;
+
+
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        #shop {
+            position: relative;
+
+
+            .submenu {
+                visibility: hidden;
+                transition: 0.2s ease-in-out;
+                transform: translate(0%, 3%);
+                background-color: $white_color;
+                @include Flexible(flex-start, flex-start, row, wrap, 140px);
+                position: absolute;
+                z-index: 3;
+                width: 800px;
+                height: 400px;
+                padding: 20px 10px;
+                top: 40px;
+                right: -440px;
+
+                h1 {
+                    font-weight: 600;
+                    line-height: 40px;
+                }
+
+                .layout {
+                    text-decoration: underline;
+                    @include Flexible(flex-start, center, column, wrap, 10px);
+                    margin-left: 40px;
+                    line-height: 30px;
+                }
+
+                .feature {
+                    @include Flexible(flex-start, flex-start, column, wrap, 15px);
+                    line-height: 30px;
+                    text-decoration: underline;
+                }
+
+                .pro {
+                    @include Flexible(flex-start, flex-start, column, wrap, 15px);
+                    line-height: 30px;
+                    text-decoration: underline;
+                }
+
+            }
+
+            &:hover .submenu {
+                visibility: visible;
+                transform: translate(0%, 0%);
+            }
+
+        }
+    }
+}

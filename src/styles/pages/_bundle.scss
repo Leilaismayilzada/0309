@@ -1,0 +1,103 @@
+.bundle {
+    position: -webkit-sticky;
+    position: sticky;
+
+    h1 {
+        font-weight: 800;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .bundle_item {
+
+        padding: 50px 0;
+        @include Flexible(flex-start, flex-start, row, wrap, 60px);
+
+        .bundle_item__img {}
+
+        .bundle_item_txt {
+
+            @include Flexible(flex-start, flex-start, column, wrap, 20px);
+
+            h5 {
+                font-weight: 400;
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 17px;
+            }
+
+            select {
+                padding: 10px;
+                outline: none;
+                border-color: rgba(195, 195, 195, 0.705);
+
+            }
+
+            .price {
+                @include Flexible(flex-start, flex-start, row, wrap, 10px);
+
+                del {
+                    font-weight: 200;
+                }
+
+                span {
+                    font-weight: 600;
+                    color: $red_color;
+                }
+            }
+        }
+    }
+
+    button {
+        background-color: $black_color;
+        padding: 15px 25px;
+        color: $white_color;
+        border: none;
+    }
+
+}
+
+.bundle_img {
+
+    position: relative;
+  
+
+    img {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+
+    }
+ 
+
+
+#bundles {
+    padding: 90px 0;
+}
+
+.bundle {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.bundle_img {
+    max-height: 100%;
+    height: calc(100% + 50px);
+    overflow-y: auto;
+
+}

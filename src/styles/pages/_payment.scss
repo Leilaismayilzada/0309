@@ -1,0 +1,27 @@
+.payment{
+    margin-top: 40px;
+    ul{
+        @include Flexible(center, flex-start, row, wrap, 5px);
+       li{
+        @include Flexible(center, flex-start, row, wrap, 15px);
+        .payment_img{
+            border: 1px solid rgb(211, 211, 211);
+            padding: 13px;
+            border-radius: 100%;
+        }
+        .payment_txt{
+            width: 200px;
+            line-height: 30px;
+            
+            h3{
+                font-weight: 500;
+                font-size: 16px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 13px;
+            }
+        }
+       }
+    }
+}
